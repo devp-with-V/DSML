@@ -1,0 +1,10 @@
+pandas
+seaborn
+scipy
+scikit-learn
+xgboost
+requests
+python-dotenv
+jinja2
+plotly
+jupyter
