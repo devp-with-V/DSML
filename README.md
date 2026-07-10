@@ -23,20 +23,13 @@ Located in `model_router/notebook.ipynb`, this pipeline automates the data scien
 
 The core of the project relies on `shared/registry.py`. Every algorithm in the `shared/methods/` directory uses a `@register_method` decorator.
 
-### Fully Implemented Domains (End-to-End Tested)
+### Implemented Domains
 These algorithms are fully wired to dynamically accept arbitrary tabular CSVs and plot the results:
 1. **Classification:** Random Forest, Logistic Regression, SVM, KNN, Naive Bayes, Gradient Boosting, Decision Trees.
 2. **Regression:** Linear, Ridge, Lasso, ElasticNet, Polynomial.
 3. **Clustering:** K-Means, Hierarchical, DBSCAN, Gaussian Mixture Models.
 4. **Dimensionality Reduction:** PCA, t-SNE, UMAP, LDA.
 5. **Anomaly Detection:** Isolation Forest, One-Class SVM, Local Outlier Factor.
-
-### 🗺️ Roadmap & Extensible Skeletons
-To demonstrate the architectural scalability of the `ModelRouter`, several specialized domains have been registered as structural skeletons. They gracefully handle missing dependencies with `try/except` blocks but require specifically formatted data (e.g., images or sequential arrays) rather than flat CSVs to run:
-- **Deep Learning:** ANN, CNN (TensorFlow), RNN/LSTM, Transformers (HuggingFace).
-- **Time Series Forecasting:** ARIMA, SARIMA, Prophet, VAR, DeepAR.
-- **Association Rule Learning:** Apriori, FP-Growth.
-- **Recommendation Systems:** Collaborative Filtering, Content-Based, Hybrid.
 
 ## 🚀 Getting Started
 
